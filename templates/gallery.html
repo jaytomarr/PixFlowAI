@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Gallery - PixFlowAI{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/gallery.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container gallery-container">
+    <h1 class="gallery-title">Video Gallery</h1>
+    <div class="gallery-grid">
+        {% for video in videos %}
+            <video src="/static/videos/{{video}}" controls></video>
+
+        {% endfor %}
+    </div>
+</div>
+{% endblock %} 
