@@ -1,5 +1,5 @@
 # PixFlowAI
 
-### AI Video Generator
+### AI Video Maker
 
 HTML, CSS, Flask, ElevenLabs
